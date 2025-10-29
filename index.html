@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Manager Genérico</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+    <header>
+        <h1>Ficha de Personagem</h1>
+        <p>Gerenciador Genérico de RPG</p>
+    </header>
+
+    <main id="ficha-container">
+        <section class="contador-ficha" id="hp-contador">
+            <h2 class="contador-label">Pontos de Vida (HP)</h2>
+            <div class="valor-display">
+                <span id="valor-atual">100</span> / <span id="valor-maximo">100</span>
+            </div>
+            <div class="controles">
+                <button onclick="diminuirHP(1)">-1 Dano</button>
+                <button onclick="diminuirHP(5)">-5 Dano</button>
+                <button onclick="aumentarHP(1)">+1 Cura</button>
+                <button onclick="aumentarHP(5)">+5 Cura</button>
+            </div>
+            </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
